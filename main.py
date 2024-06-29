@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error
 # Load data
 @st.cache_data
 def load_data():
-    data = pd.read_excel("NIFTY BANK.csv")
+    data = pd.read_excel("NIFTY BANK.xlsx")
     return data
 
 def preprocess_data(data):
