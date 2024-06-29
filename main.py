@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error
 # Load data
 @st.cache_data
 def load_data():
-    data = pd.read_excel("NIFTY50_JAN2021_APR2024.xlsx")
+    data = pd.read_excel("NIFTY BANK.csv")
     return data
 
 def preprocess_data(data):
@@ -29,7 +29,7 @@ def evaluate_model(model, X_test, y_test):
     return mse
 
 def main():
-    st.title("NIFTY 50 Close Price Predictor")
+    st.title("NIFTY BANK Close Price Predictor")
 
     data = load_data()
     
